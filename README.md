@@ -104,6 +104,7 @@ public class ProductManagerObserver implements Observer, DisplaySchedule {
 
 实现步骤：
  1.首先观察者需要实现java.util.Observer,然后将其被观察者=>java.util.Observaerable作为其观察者的构造函数
+   
    <1>、通过observeable.addObserver(this)添加观察者
    ```
    public class BossMngObserver implements Observer, DisplayIllustrate {
@@ -137,7 +138,8 @@ public class ProductManagerObserver implements Observer, DisplaySchedule {
  
  2.被观察者需要继承java.util.Observerable,
  
-   <1>、然后先调用setChanged()方法，
+   <1>、然后先调用setChanged()方法
+   
    <2>、在进行调用notifyObserves()更新数据
    
 ```
