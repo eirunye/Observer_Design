@@ -19,7 +19,15 @@ public class BossMngObserver implements Observer, DisplayIllustrate {
 
     public BossMngObserver(Observable observable) {
         this.observable = observable;
+        //添加绑定当前的观察者
         observable.addObserver(this);
+    }
+
+    /**
+     * 删除当前的观察者
+     */
+    public void deleteObserver(){
+        observable.deleteObserver(this);
     }
 
     @Override

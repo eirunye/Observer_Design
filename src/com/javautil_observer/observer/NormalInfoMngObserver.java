@@ -22,7 +22,9 @@ public class NormalInfoMngObserver implements Observer, DisplayIllustrate {
         this.observable = observable;
         observable.addObserver(this);
     }
-
+    /**
+     * 删除当前的观察者
+     */
     public void deleteObserver(){
         observable.deleteObserver(this);
     }

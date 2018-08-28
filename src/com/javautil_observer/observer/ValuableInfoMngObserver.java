@@ -21,7 +21,9 @@ public class ValuableInfoMngObserver implements Observer, DisplayIllustrate {
         this.observable = observable;
         observable.addObserver(this);
     }
-
+    /**
+     * 删除当前的观察者
+     */
     public void deleteObserve() {
         observable.deleteObserver(this);
     }
