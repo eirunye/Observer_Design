@@ -1,0 +1,50 @@
+@startuml
+
+interface Observer{
++ void update()
+}
+interface Subject
+interface DisplaySchedule{
++ void display()
+}
+
+class DevelopmentProgressData{
+  DevelopmentProgressData()
+  registerObserver()
+  unRegisterObserver()
+  notifyObservers()
+  setCurrentData()
+}
+
+class ProjectManagerObserver{
+
+  ProjectManagerObserver(Subject developmentProgressSubject)
+ + void display()
+ + void update()
+}
+class ProductManagerObserver{
+  ProductManagerObserver(Subject developmentProgressSubject)
+ + void display()
+ + void update()
+}
+
+'Subject -down-> Observer : observes >
+
+'DevelopmentProgressData .up.|> Subject : implement
+
+Subject <|.. DevelopmentProgressData : implement
+
+ProjectManagerObserver .up.|> Observer : implement
+ProductManagerObserver .up.|> Observer : implement
+
+ProductManagerObserver .up.|> DisplaySchedule : implement
+ProjectManagerObserver .up.|> DisplaySchedule : implement
+
+ProjectManagerObserver -down-> Subject : 主题 >
+ProductManagerObserver -down-> Subject : 主题 >
+
+
+
+
+
+@enduml
