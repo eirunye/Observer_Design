@@ -273,4 +273,4 @@ public class Test {
 
 # [我的GitHub博客](https://eirunye.github.io/)
 ### [设计模式](https://eirunye.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/)
-大家可以进入这里学习**[设计模式](https://eirunye.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/)**
+大家可以进入这里学习[**设计模式**](https://eirunye.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/)
