@@ -1,4 +1,4 @@
-# 观察者模式
+# <div align=center>观察者模式</div>
 
 # 简介
 
